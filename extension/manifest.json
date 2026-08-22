@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Lch Picker",
   "version": "1.0.0",
-  "description": "Convert colors between Hex, RGB, HSL, and modern CSS Oklch and LCH color spaces offline.",
+  "description": "Convert hexadecimal colors to RGB, HSL, and accurate CSS OKLCH values offline.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

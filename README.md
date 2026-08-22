@@ -1,6 +1,6 @@
-# LCH & Oklch Color Converter — Modern CSS Color Space Picker
+# OKLCH Color Converter | Accurate Modern CSS Color Values
 
-> Convert colors between Hex, RGB, HSL, and modern CSS Oklch and LCH perceptual color spaces online. High precision and offline.
+> Convert hexadecimal colors to RGB, HSL, and numerically accurate CSS OKLCH values offline.
 
 [![Live Web App](https://img.shields.io/badge/Web_App-Live_Demo-3B82F6?style=flat-square)](https://cig13zs.github.io/lch-picker/)
 [![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-Manifest_V3-10B981?style=flat-square)](https://github.com/cig13zs/lch-picker/releases)
@@ -10,7 +10,7 @@
 
 ---
 
-## ⚡ Key Features
+## Features
 
 - **100% Client-Side & Offline:** Pure vanilla JavaScript runtime. Zero network uploads, zero telemetry, zero analytics tracking.
 - **Instant Processing:** Zero dependencies or heavy frameworks for ultra-fast, lightweight execution.
@@ -19,13 +19,13 @@
 
 ---
 
-## 📖 How It Works
+## How it works
 
 Enter any Hex or RGB color to convert into standard CSS Color Level 4 oklch() and lch() color representations.
 
 ---
 
-## 🛠️ Offline Chrome Extension Installation
+## Install the extension
 
 1. Download or clone this repository:
    ```bash
@@ -38,7 +38,7 @@ Enter any Hex or RGB color to convert into standard CSS Color Level 4 oklch() an
 
 ---
 
-## 💡 Frequently Asked Questions (FAQ)
+## FAQ
 
 ### Is my data uploaded to any server?
 No. Everything executes locally inside your browser memory or extension sandbox. No telemetry, third-party scripts, or API requests are made.
@@ -53,7 +53,7 @@ const engine = require('./core');
 
 ---
 
-## 📄 License & Author
+## License and support
 
 - **Author:** [jju1s](https://github.com/cig13zs)
 - **License:** [MIT License](LICENSE)

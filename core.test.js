@@ -1,8 +1,10 @@
 const assert = require('assert');
-const LCHPicker = require('./core');
-
-const res = LCHPicker.convert('#3b82f6');
-assert.strictEqual(res.rgb, 'rgb(59, 130, 246)');
-assert.strictEqual(res.oklch.startsWith('oklch('), true);
-
-console.log('ok, all LCHPicker assertions passed');
+const Tool = require('./core');
+const red = Tool.convert('#ff0000'), blue = Tool.convert('#0000ff');
+assert.strictEqual(red.rgb, 'rgb(255, 0, 0)');
+assert.ok(Math.abs(red.components.lightness - 0.62796) < 0.0002);
+assert.ok(Math.abs(red.components.chroma - 0.25768) < 0.0002);
+assert.ok(Math.abs(red.components.hue - 29.23) < 0.1);
+assert.ok(Math.abs(red.components.hue - blue.components.hue) > 100);
+assert.throws(() => Tool.convert('#xyz'), /hexadecimal/);
+console.log('ok, OKLCH reference assertions passed');
